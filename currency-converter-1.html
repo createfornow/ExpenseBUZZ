@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="currency-converter-1.css">
+    <!-- <link rel="stylesheet" href="script.js"> -->
+
+    <!-- <script scr="script.js" ></script> -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="daily-expense.css">
+
+<script src="https://kit.fontawesome.com/96adb5625a.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!--<img src="money1.jpg" alt="money-pic" class="money1" >-->
+
+ 
+    <section id="tittle">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="">ExpenseBuzz</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo2" aria-controls="navbarTogglerDemo2" aria-expanded="false" aria-label="togglenavigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo2">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="Project.html">Home</a>
+          </li>
+         
+          <li>
+            <a class="nav-link" href="deleverage.html">Delevarege</a>
+          </li>
+          <li>
+            <a class="nav-link" href="notes.html">Notes</a>
+          </li>
+        </ul>
+        </div>
+         </nav>
+      </div>
+    </section> 
+
+
+
+
+
+
+
+    <h1>Currency Converter</h1>
+    <p> <b>CHOOSE</b> The Currency and <strong>ENTER</strong> the ammout, to get the exchange rates. </p>
+      <div class="container-1">
+        <div class="currency">
+
+
+          <div class="scroll">
+
+          <select id="currency-one">
+
+            <option value="USD" selected>United States Dollar $</option>
+            <option value="EUR">Euro</option>
+            <option value="GBP">United Kingdom Pounds</option>
+            <option value="CAD">Canadian Dollars</option>
+            <option value="INR">Indian Rupees</option>
+            <option value="CHF">Swiss Franc</option>
+            <option value="KYD">Cayman Island Dollar</option>
+            <option value="KWD">Kuwaiti Dinar</option>
+            <option value="AED">Arab Emirate Dirham</option>
+            <option value="AUD">Australian Dollar</option>
+            <option value="NZD">New Zealand Dollar</option>
+            <option value="DEM">German Mark</option>
+            <option value="JPY">Japanese yen</option>
+            <option value="CNY">Renminbi/Chinese Yuan</option>
+            <option value="BTN">Bhutan Ngultrum</option>
+            <option value="LKR">Sri Lankan Rupee</option>
+            <option value="PKR">Pakistani Rupee</option>
+            <option value="NPR">Nepalese Rupee</option>
+
+
+          </select>
+        </div>
+          <input type="number" id="amount-one" placeholder="0" value="1">
+
+        </div>
+        <div class="swap-rate-container">
+          <button class="btn" id="swap">Swap</button>
+          <div class="rate" id="rate">
+
+          </div>
+          <div class="currency">
+
+
+              <div class="scroll">
+
+            <select id="currency-two">
+
+              <option value="USD">United States Dollar $</option>
+              <option value="EUR">Euro</option>
+              <option value="GBP">United Kingdom Pounds</option>
+              <option value="CAD">Canadian Dollars</option>
+              <option value="INR" selected >Indian Rupees</option>
+              <option value="CHF">Swiss Franc</option>
+              <option value="KYD">Cayman Island Dollar</option>
+              <option value="KWD">Kuwaiti Dinar</option>
+              <option value="AED">Arab Emirate Dirham</option>
+              <option value="AUD" >Australian Dollar</option>
+              <option value="NZD">New Zealand Dollar</option>
+              <option value="DEM">German Mark</option>
+              <option value="JPY">Japanese yen</option>
+              <option value="CNY">Renminbi/Chinese Yuan</option>
+              <option value="BTN">Bhutan Ngultrum</option>
+              <option value="LKR">Sri Lankan Rupee</option>
+              <option value="PKR">Pakistani Rupee</option>
+              <option value="NPR">Nepalese Rupee</option>
+
+
+            </select>
+          </div>
+            <input type="number" id="amount-two" placeholder="0" value="0">
+
+          </div>
+
+        </div>
+        <h3>Created by S.K.R @ PTU </h3>
+      </div>
+
+    <script charset="utf-8" src="currency-converter-1.js"></script>
+  </body>
+
+
+</html>
