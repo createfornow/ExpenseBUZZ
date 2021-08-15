@@ -1,7 +1,7 @@
 .container-fluid{
    height: 100%;
    width: 100%;
-   background-image: linear-gradient(rgba(175, 170, 170, 0.4),rgba(2, 2, 2,0.4)),url(/banner.jpg);
+   background-image: linear-gradient(rgba(175, 170, 170, 0.4),rgba(2, 2, 2,0.4)),url(banner.jpg);
    background-position: center;
    background-size: cover;
    position: absolute;
